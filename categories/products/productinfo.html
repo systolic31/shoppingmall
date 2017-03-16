@@ -1,0 +1,39 @@
+﻿<div class="productinfo_title" style="font-size:40px;text-align:center;padding:4%;">
+     {{productsInfoCtrl.productName}}
+</div>
+
+<div class="productinfo_wrap" style="height:600px;overflow:hidden;">
+    <div class="productinfo_image" style="border-right:gray solid 1px;height:100%;float:left;display:inline-block;width:49.7%;">
+        <div class="product_image" style="margin:6% 30%;height:400px;" back-img="{{productsInfoCtrl.productImage}}"></div>
+    </div>    
+    <div class="productinfo_info" style="height:100%;display:inline-block;float:right;width:49.5%;">
+        <div class="product_image" style="margin:6% 16%;">
+            <p><b>Product name</b> : {{productsInfoCtrl.productName}}</p>
+            <p><b>Product price</b> : {{productsInfoCtrl.productPrice}}</p>
+            <div style="width:85%;">
+                <p><b>Product Description</b> : {{productsInfoCtrl.productDescription}}</p>
+                <div style="margin-top:40px;">
+                    <span><b>Amount</b></span><select class="form-control" style="margin-bottom:10px;">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <span><b>Size</b></span><select class="form-control" style="margin-bottom:10px;">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button class="btn-custom-black" style="width:50%;float:left"> CART </button>
+                    <button class="btn btn-default" style="width:49%;"> BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="productinfo_detail" style="height:250px;font-size:30px;text-align:center;padding:3%;color:gray">
+    Detail
+</div>

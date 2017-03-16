@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Homepage">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/33.css">
+
+</head>
+<body ng-controller="MainCtrl">
+    <!-- User navigator -->
+    <div class="user_wrap"> 
+        <ul style="float:right;list-style-type:none;">
+            <li class="user_menu"><a class="user_font" ui-sref="login"> Login </a></li>
+            <li class="user_menu"><a class="user_font" ui-sref="join"> Join </a></li>
+        </ul>
+    </div>
+    <!-- Main container [login/join/productinfo] base:home -->
+    <div ui-view>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="common/models/categories-models.js"></script>
+    <script src="common/models/products-models.js"></script>
+    <script src="categories/categories.js"></script>
+    <script src="categories/products/products.js"></script>
+    <script src="categories/products/productinfo.js"></script>
+
+</body>
+</html>

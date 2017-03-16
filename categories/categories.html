@@ -1,0 +1,7 @@
+﻿<div class="padding20">
+    <ul>
+        <li class="nonestyle" ng-repeat="category in categoriesListCtrl.categories">
+            <a class="category_font" ui-sref="home.categories.products({category:category.name}) ">{{category.name}}</a>
+        </li>
+    </ul>
+</div>
